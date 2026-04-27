@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const defaultContactTo = "avsmartechnology@gmail.com";
+const defaultContactTo = "contact@avsmartech.com";
 
 type ContactPayload = {
   name?: string;

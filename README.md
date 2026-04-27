@@ -26,7 +26,7 @@ SMTP_SECURE=true
 SMTP_USER=avsmartechnology@gmail.com
 SMTP_PASS=tu_contrasena_de_aplicacion_de_gmail
 SMTP_FROM="AV SmartTech <avsmartechnology@gmail.com>"
-CONTACT_TO=avsmartechnology@gmail.com
+CONTACT_TO=contact@avsmartech.com
 ```
 
 No subas `.env.local` al repositorio.

@@ -28,7 +28,7 @@ export const navItems = [
 export const contactInfo = {
   phone: "+34664855649",
   phoneLabel: "+34 664 855 649",
-  email: "avsmartechnology@gmail.com"
+  email: "contact@avsmartech.com"
 };
 
 export const serviceGroups = [
