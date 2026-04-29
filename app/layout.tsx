@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/layout/Footer";
@@ -90,6 +91,7 @@ export default function RootLayout({
           <PageTransition>{children}</PageTransition>
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   );
