@@ -55,8 +55,8 @@ export default function ContactoPage() {
     <>
       <PageHero
         eyebrow="Contacto"
-        title="Solicita un diagnóstico gratuito."
-        description="Te mostraremos oportunidades reales para vender más y reducir costes. Sin humo, sin presión y con prioridades claras."
+        title="Solicita un diagnóstico gratuito para tu negocio."
+        description="Cuéntanos qué quieres mejorar y te mostraremos oportunidades reales para conseguir más clientes, ahorrar tiempo y reducir costes. Sin humo, sin presión y con prioridades claras."
         points={["Más clientes", "Menos tareas manuales", "Más margen", "Más control"]}
       />
 

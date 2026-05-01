@@ -4,12 +4,12 @@ import { FormEvent, useState } from "react";
 import { Send } from "lucide-react";
 
 const services = [
-  "Digitalización de negocios",
-  "Automatización con IA",
+  "Marketing digital",
+  "Diseño web",
   "SEO local y mapas",
-  "Web corporativa",
+  "Automatización con IA",
   "Dashboards e integraciones",
-  "Diagnóstico completo"
+  "Diagnóstico gratuito"
 ];
 
 export function ContactForm() {

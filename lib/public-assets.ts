@@ -22,7 +22,7 @@ export function publicAsset(baseName: string, aliases: string[] = []) {
 
 export function getBrandAssets() {
   return {
-    logo: publicAsset("avsmartech-logo"),
+    logo: publicAsset("avsmartech-logo-trans", ["avsmartech-logo"]),
     logoCircle: publicAsset("avsmartech-logo-circle", [
       "avsmartech_logo_circle_masked",
       "avsmartech_logo_circle",

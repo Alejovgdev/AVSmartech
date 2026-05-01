@@ -17,15 +17,23 @@ export type ServiceCardItem = {
 type ServiceCardsProps = {
   items: ServiceCardItem[];
   compact?: boolean;
+  liquid?: boolean;
 };
 
-export function ServiceCards({ items, compact = false }: ServiceCardsProps) {
+export function ServiceCards({ items, compact = false, liquid = false }: ServiceCardsProps) {
   return (
     <div className={cn("grid gap-5", compact ? "md:grid-cols-2" : "md:grid-cols-2 xl:grid-cols-3")}>
       {items.map((item, index) => (
         <ScrollReveal key={item.title} delay={index * 0.035}>
-          <article className="group flex h-full flex-col rounded-lg border border-slate-200/80 bg-white p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-cyan/40 hover:shadow-premium">
-            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-soft text-electric transition group-hover:bg-electric group-hover:text-white">
+          <article
+            className={cn(
+              "group flex h-full flex-col p-6",
+              liquid
+                ? "glass-card"
+                : "premium-card rounded-lg border border-slate-200/80 bg-white shadow-soft hover:border-cyan/40 hover:shadow-premium"
+            )}
+          >
+            <div className="icon-float mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-soft text-electric transition group-hover:bg-electric group-hover:text-white">
               <Icon name={item.icon} className="h-6 w-6" />
             </div>
             <h2 className="font-display text-xl font-semibold text-navy">{item.title}</h2>

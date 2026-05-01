@@ -58,9 +58,9 @@ export function HeaderClient({ logoSrc }: { logoSrc: string }) {
         <div className="hidden items-center gap-3 lg:flex">
           <Link
             href="/contacto"
-            className="focus-ring rounded-full bg-navy px-5 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-electric"
+            className="focus-ring subtle-sheen rounded-full bg-navy px-5 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-electric"
           >
-            Solicitar diagnóstico
+            Solicitar diagnóstico gratuito
           </Link>
         </div>
 
@@ -99,9 +99,9 @@ export function HeaderClient({ logoSrc }: { logoSrc: string }) {
               ))}
               <Link
                 href="/contacto"
-                className="focus-ring mt-2 rounded-lg bg-navy px-4 py-3 text-center text-base font-semibold text-white shadow-glow"
+                className="focus-ring subtle-sheen mt-2 rounded-lg bg-navy px-4 py-3 text-center text-base font-semibold text-white shadow-glow"
               >
-                Solicitar diagnóstico
+                Solicitar diagnóstico gratuito
               </Link>
             </nav>
           </motion.div>

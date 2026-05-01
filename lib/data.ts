@@ -33,26 +33,28 @@ export const contactInfo = {
 
 export const serviceGroups = [
   {
-    title: "Web y branding digital",
+    title: "Diseño web orientado a clientes",
     description:
-      "Presencia digital completa, diseño web orientado a conversión y una marca online que genera confianza desde el primer contacto.",
-    outcome: "Más confianza. Más ventas.",
+      "Webs profesionales para empresas, pymes y autónomos que necesitan explicar mejor su oferta, generar confianza y convertir visitas en contactos.",
+    outcome: "Más confianza. Más contactos.",
     icon: "globe" as IconName,
-    points: ["Web corporativa premium", "Marca digital consistente", "Arquitectura CRO"]
+    href: "/diseno-web-valencia",
+    points: ["Diseño web", "Mensaje comercial", "Arquitectura CRO"]
   },
   {
-    title: "SEO local",
+    title: "Marketing digital y SEO local",
     description:
-      "Posicionamos tu negocio donde tus clientes ya están buscando: Google, mapas y resultados locales de alta intención.",
-    outcome: "Más visibilidad cerca de ti.",
+      "Mejoramos tu visibilidad en Google, mapas y canales digitales para atraer clientes cercanos con intención real de compra.",
+    outcome: "Más visibilidad.",
     icon: "map" as IconName,
-    points: ["Google Business Profile", "Apple Business Connect", "Optimización local"]
+    href: "/marketing-digital-valencia",
+    points: ["Marketing digital", "Google Business Profile", "SEO local"]
   },
   {
     title: "Captación online",
     description:
       "Diseñamos campañas, funnels y recorridos de conversión para convertir visitas dispersas en oportunidades comerciales.",
-    outcome: "Más leads cualificados.",
+    outcome: "Más solicitudes cualificadas.",
     icon: "target" as IconName,
     points: ["Funnels de captación", "Campañas digitales", "Landing pages"]
   },

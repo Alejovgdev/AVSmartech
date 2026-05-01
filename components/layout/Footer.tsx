@@ -5,11 +5,11 @@ import { getBrandAssets } from "@/lib/public-assets";
 import { contactInfo, navItems } from "@/lib/data";
 
 const footerServices = [
-  "Digitalización de negocios",
-  "Automatización con IA",
+  "Marketing digital",
+  "Diseño web",
   "SEO local",
-  "Dashboards",
-  "Integraciones"
+  "Automatización",
+  "Inteligencia artificial"
 ];
 
 export function Footer() {
@@ -33,7 +33,7 @@ export function Footer() {
             <span className="font-display text-lg font-semibold">AV SmartTech</span>
           </Link>
           <p className="mt-6 max-w-sm text-sm leading-7 text-white/72">
-            Digitalización para vender más. Automatización para operar mejor. Tecnología que impacta en tu cuenta de resultados.
+            Marketing digital, diseño web, SEO local y automatización para conseguir más clientes, ahorrar tiempo y reducir costes.
           </p>
           <div className="mt-6 grid gap-3 text-sm font-semibold text-white/80">
             <a className="inline-flex items-center gap-3 transition hover:text-cyan" href={`tel:${contactInfo.phone}`}>
@@ -76,9 +76,9 @@ export function Footer() {
           </p>
           <Link
             href="/contacto"
-            className="focus-ring mt-6 inline-flex rounded-full bg-white px-5 py-3 text-sm font-semibold text-navy transition hover:-translate-y-0.5 hover:bg-cyan hover:text-white"
+            className="focus-ring subtle-sheen mt-6 inline-flex rounded-full bg-white px-5 py-3 text-sm font-semibold text-navy transition hover:-translate-y-0.5 hover:bg-cyan hover:text-white"
           >
-            Solicitar diagnóstico
+            Solicitar diagnóstico gratuito
           </Link>
         </div>
       </div>

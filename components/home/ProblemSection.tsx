@@ -4,7 +4,7 @@ import { ScrollReveal } from "@/components/core/ScrollReveal";
 const problems = [
   {
     title: "No te encuentran online",
-    description: "Tus clientes buscan soluciones, pero tu negocio no aparece con la claridad ni la autoridad que debería.",
+    description: "Tus clientes buscan en Google, mapas y redes, pero tu negocio no aparece con la claridad ni la confianza que debería.",
     icon: SearchX
   },
   {
@@ -32,10 +32,10 @@ export function ProblemSection() {
           <ScrollReveal>
             <p className="mb-4 text-sm font-semibold uppercase text-electric">El problema real</p>
             <h2 className="font-display text-3xl font-semibold leading-[1.08] text-navy sm:text-5xl">
-              Tu negocio no necesita más herramientas. Necesita sistemas que trabajen por ti.
+              Tu negocio no necesita más herramientas sueltas. Necesita una estrategia que genere clientes y ahorre tiempo.
             </h2>
             <p className="mt-6 text-lg leading-8 text-muted">
-              Muchos negocios pierden ventas por una mala presencia digital y pierden margen dedicando demasiadas horas a tareas manuales. En AV SmartTech convertimos procesos lentos en sistemas que generan crecimiento.
+              Muchos negocios pierden ventas por una web poco clara, un SEO local débil o procesos manuales que consumen horas. En AV Smartech convertimos esas fricciones en sistemas digitales orientados a crecimiento.
             </p>
           </ScrollReveal>
 
@@ -44,8 +44,8 @@ export function ProblemSection() {
               const Icon = problem.icon;
               return (
                 <ScrollReveal key={problem.title} delay={index * 0.04}>
-                  <article className="h-full rounded-lg border border-slate-200 bg-soft p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan/40 hover:bg-white hover:shadow-premium">
-                    <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-white text-electric shadow-soft">
+                  <article className="premium-card group h-full rounded-lg border border-slate-200 bg-soft p-6 hover:border-cyan/40 hover:bg-white hover:shadow-premium">
+                    <div className="icon-float mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-white text-electric shadow-soft">
                       <Icon className="h-6 w-6" aria-hidden="true" />
                     </div>
                     <h3 className="font-display text-lg font-semibold text-navy">{problem.title}</h3>

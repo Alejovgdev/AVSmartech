@@ -60,12 +60,12 @@ export default function AutomatizacionPage() {
     <>
       <PageHero
         eyebrow="Automatización con IA"
-        title="Convierte tareas repetitivas en sistemas inteligentes."
-        description="Diseñamos automatizaciones para ventas, RRHH, logística, finanzas e informática. Menos trabajo manual, mejores datos y procesos preparados para escalar."
+        title="Ahorra tiempo automatizando tareas repetitivas."
+        description="Diseñamos automatizaciones para ventas, administración, atención al cliente, reportes y operaciones. Menos trabajo manual, mejores datos y procesos preparados para crecer sin disparar costes."
         imageSrc={assets.office}
         imageAlt="Empresa moderna trabajando con sistemas digitales"
         points={["CRM automático", "Bots IA", "Dashboards", "Integraciones"]}
-        ctaLabel="Quiero ahorrar costes"
+        ctaLabel="Hablemos de tu negocio"
       />
 
       <section className="bg-white py-20 sm:py-24">
@@ -120,7 +120,7 @@ export default function AutomatizacionPage() {
       <CTASection
         title="Reduce costes sin frenar el crecimiento."
         description="Detectamos tareas automatizables, priorizamos por impacto y construimos sistemas que liberan horas desde el primer tramo."
-        buttonLabel="Quiero ahorrar costes"
+        buttonLabel="Hablemos de tu negocio"
       />
     </>
   );

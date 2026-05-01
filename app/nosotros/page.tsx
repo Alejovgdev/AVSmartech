@@ -33,13 +33,13 @@ export default function NosotrosPage() {
     <>
       <PageHero
         eyebrow="Nosotros"
-        title="Tecnología con propósito empresarial."
-        description="No instalamos tecnología por instalar. Diseñamos sistemas que mejoran ventas, eficiencia y tranquilidad operativa."
+        title="Tecnología práctica para empresas que quieren crecer."
+        description="AV Smartech nace de la visión de tres ingenieros de software que quieren ayudar a empresas a crecer mediante soluciones digitales prácticas, inteligentes y orientadas a resultados."
         imageSrc={assets.hook}
         imageAlt="AV SmartTech presentando soluciones digitales inteligentes"
         imageAspect="wide"
         points={["Diagnóstico claro", "Implementación cuidada", "Impacto medible", "Acompañamiento profesional"]}
-        ctaLabel="Solicitar diagnóstico"
+        ctaLabel="Solicitar diagnóstico gratuito"
       />
 
       <section className="bg-white py-20 sm:py-24">
@@ -63,7 +63,7 @@ export default function NosotrosPage() {
               Primero entendemos el negocio. Después elegimos la tecnología.
             </h2>
             <p className="mt-6 text-lg leading-8 text-muted">
-              AV SmartTech existe para acercar sistemas digitales inteligentes a empresas que quieren vender más, operar mejor y tomar decisiones con datos. Buscamos soluciones prácticas, sostenibles y alineadas con margen, productividad y crecimiento.
+              AV Smartech existe para acercar marketing digital, diseño web, automatización e inteligencia artificial a empresas que quieren vender más, operar mejor y tomar decisiones con datos. Buscamos soluciones prácticas, sostenibles y alineadas con clientes, productividad y crecimiento.
             </p>
           </ScrollReveal>
         </div>
@@ -93,8 +93,9 @@ export default function NosotrosPage() {
       </section>
 
       <CTASection
-        title="Hablemos de sistemas, no de herramientas sueltas."
+        title="Hablemos de tu negocio, no de herramientas sueltas."
         description="Te mostraremos dónde la tecnología puede generar impacto real en tu operación y en tus ventas."
+        buttonLabel="Hablemos de tu negocio"
       />
     </>
   );

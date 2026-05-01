@@ -1,24 +1,30 @@
-import { BarChart3, CircleDollarSign, SlidersHorizontal } from "lucide-react";
+import { ArrowUpRight, BarChart3, CircleDollarSign, SlidersHorizontal } from "lucide-react";
 import { ScrollReveal } from "@/components/core/ScrollReveal";
 
 const benefits = [
   {
-    title: "Más clientes",
+    title: "Más clientes potenciales",
+    label: "Captación",
     description:
-      "Mejor presencia digital, mensajes claros y canales preparados para convertir búsquedas en oportunidades comerciales.",
-    icon: BarChart3
+      "Mejoramos tu visibilidad y captación online con marketing digital, diseño web y SEO local orientado a contactos reales.",
+    icon: BarChart3,
+    bar: "w-4/5"
   },
   {
-    title: "Menos costes",
+    title: "Menos trabajo manual",
+    label: "Automatización",
     description:
-      "Automatizaciones que reducen horas repetitivas, errores, esperas internas y tareas que no aportan margen.",
-    icon: CircleDollarSign
+      "Automatizamos procesos repetitivos para que tu equipo ahorre tiempo, reduzca errores y pueda centrarse en vender y atender mejor.",
+    icon: CircleDollarSign,
+    bar: "w-3/5"
   },
   {
-    title: "Más control",
+    title: "Mejor control",
+    label: "Datos claros",
     description:
-      "Datos conectados, reportes visibles y procesos medibles para tomar decisiones con menos ruido operativo.",
-    icon: SlidersHorizontal
+      "Organizamos tu negocio con herramientas digitales, datos conectados y reportes claros para decidir con menos ruido.",
+    icon: SlidersHorizontal,
+    bar: "w-2/3"
   }
 ];
 
@@ -31,12 +37,29 @@ export function BenefitBlocks() {
             const Icon = benefit.icon;
             return (
               <ScrollReveal key={benefit.title} delay={index * 0.05}>
-                <article className="glass-panel h-full rounded-lg p-7 transition duration-300 hover:-translate-y-1">
-                  <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-lg bg-white text-electric">
-                    <Icon className="h-6 w-6" aria-hidden="true" />
+                <article className="glass-card-dark group h-full p-7">
+                  <div className="relative">
+                  <div className="mb-8 flex items-start justify-between gap-4">
+                    <div className="icon-float flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-electric">
+                      <Icon className="h-6 w-6" aria-hidden="true" />
+                    </div>
+                    <span className="inline-flex items-center gap-1 rounded-full border border-white/12 bg-white/8 px-3 py-1 text-xs font-semibold text-cyan">
+                      {benefit.label}
+                      <ArrowUpRight className="h-3.5 w-3.5" />
+                    </span>
                   </div>
-                  <h2 className="font-display text-2xl font-semibold">{benefit.title}</h2>
+                  <h2 className="font-display text-2xl font-semibold text-white">{benefit.title}</h2>
                   <p className="mt-4 leading-7 text-white/72">{benefit.description}</p>
+                  <div className="mt-7">
+                    <div className="mb-2 flex justify-between text-xs font-semibold uppercase text-white/48">
+                      <span>Impacto</span>
+                      <span>Prioridad alta</span>
+                    </div>
+                    <div className="h-2 overflow-hidden rounded-full bg-white/10">
+                      <div className={`h-full rounded-full bg-gradient-to-r from-cyan to-white/72 ${benefit.bar}`} />
+                    </div>
+                  </div>
+                  </div>
                 </article>
               </ScrollReveal>
             );

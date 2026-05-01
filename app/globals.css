@@ -78,6 +78,133 @@ img {
   backdrop-filter: blur(18px);
 }
 
+.glass-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.68);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow:
+    0 20px 60px rgba(0, 27, 63, 0.11),
+    inset 0 1px 0 rgba(255, 255, 255, 0.42);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.glass-card-dark {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 24px;
+  background: rgba(10, 20, 35, 0.55);
+  box-shadow:
+    0 24px 70px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.glass-card::before,
+.glass-card-dark::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.32), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 52%);
+  opacity: 0.68;
+}
+
+.glass-card:hover,
+.glass-card-dark:hover {
+  transform: translateY(-4px);
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 174, 239, 0.36);
+  box-shadow:
+    0 28px 80px rgba(0, 27, 63, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.glass-card-dark:hover {
+  border-color: rgba(0, 174, 239, 0.34);
+  box-shadow:
+    0 30px 86px rgba(0, 0, 0, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.premium-card {
+  transition:
+    transform 0.24s ease,
+    box-shadow 0.24s ease,
+    border-color 0.24s ease,
+    background-color 0.24s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-4px);
+}
+
+.icon-float {
+  transition:
+    transform 0.24s ease,
+    color 0.24s ease,
+    background-color 0.24s ease;
+}
+
+.group:hover .icon-float {
+  transform: translateY(-2px) scale(1.04);
+}
+
+.flow-connector {
+  background: linear-gradient(90deg, rgba(0, 91, 255, 0.18), rgba(0, 174, 239, 0.58), rgba(0, 91, 255, 0.18));
+}
+
+.subtle-sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.subtle-sheen::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-120%);
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.22), transparent 70%);
+  transition: transform 0.6s ease;
+}
+
+.subtle-sheen:hover::after {
+  transform: translateX(120%);
+}
+
+.dashboard-enter {
+  animation: dashboard-enter 0.42s cubic-bezier(0.22, 1, 0.36, 1) 0.08s both;
+}
+
+@keyframes dashboard-enter {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 .blue-ring {
   box-shadow:
     0 0 0 1px rgba(0, 91, 255, 0.1),

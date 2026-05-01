@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { ArrowRight, PlayCircle } from "lucide-react";
 import { ScrollReveal } from "@/components/core/ScrollReveal";
+import { HeroDashboard } from "@/components/home/HeroDashboard";
 import { WebGLBackground } from "@/components/webgl/WebGLBackground";
 
 const proofPoints = [
-  "Más clientes",
-  "Menos tareas manuales",
-  "Más margen operativo"
+  "Marketing digital",
+  "SEO local",
+  "Menos tareas manuales"
 ];
 
 export function Hero() {
@@ -14,27 +15,27 @@ export function Hero() {
     <section className="relative flex min-h-[82vh] overflow-hidden bg-navy text-white">
       <WebGLBackground />
       <div className="relative mx-auto flex w-full max-w-7xl items-center px-5 py-14 sm:px-6 sm:py-20 lg:px-8">
-        <ScrollReveal className="max-w-4xl pt-2 sm:pt-6">
+        <ScrollReveal className="max-w-4xl pt-2 sm:pt-6 lg:max-w-[760px]">
           <p className="mb-5 inline-flex rounded-full border border-white/16 bg-white/10 px-4 py-2 text-sm font-semibold text-cyan backdrop-blur">
-            Tecnología que impacta en tu cuenta de resultados
+            Marketing digital, automatización e IA para empresas
           </p>
           <h1 className="font-display text-4xl font-semibold leading-[1.03] sm:text-6xl lg:text-7xl">
-            Digitalizamos tu negocio y automatizamos tus procesos con IA
+            Consigue más clientes y automatiza tu negocio
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-white/76 sm:text-xl">
-            Ayudamos a empresas a conseguir más clientes, ahorrar tiempo y reducir costes mediante sistemas digitales inteligentes.
+            Ayudamos a empresas, pymes y autónomos a vender más, ahorrar tiempo y reducir costes mediante marketing digital, diseño web, SEO local, automatización e inteligencia artificial.
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <Link
               href="/contacto"
-              className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-4 text-sm font-semibold text-navy shadow-glow transition hover:-translate-y-0.5 hover:bg-cyan hover:text-white"
+              className="focus-ring subtle-sheen inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-4 text-sm font-semibold text-navy shadow-glow transition hover:-translate-y-0.5 hover:bg-cyan hover:text-white"
             >
               Solicitar diagnóstico gratuito
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
               href="/servicios"
-              className="focus-ring inline-flex items-center justify-center gap-2 rounded-full border border-white/24 bg-white/8 px-7 py-4 text-sm font-semibold text-white backdrop-blur transition hover:-translate-y-0.5 hover:bg-white/16"
+              className="focus-ring inline-flex items-center justify-center gap-2 rounded-full border border-white/24 bg-white/8 px-7 py-4 text-sm font-semibold text-white backdrop-blur transition hover:-translate-y-0.5 hover:border-cyan/50 hover:bg-white/16"
             >
               <PlayCircle className="h-4 w-4" />
               Ver servicios
@@ -49,6 +50,7 @@ export function Hero() {
             ))}
           </div>
         </ScrollReveal>
+        <HeroDashboard />
       </div>
     </section>
   );

@@ -33,7 +33,7 @@ export function BeforeAfterSection() {
             whileInView={reduced ? { opacity: 1 } : { opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="rounded-lg border border-slate-200 bg-white p-7 shadow-soft"
+            className="glass-card p-7"
           >
             <p className="text-sm font-semibold uppercase text-muted">Antes</p>
             <ul className="mt-7 grid gap-4">
@@ -63,7 +63,7 @@ export function BeforeAfterSection() {
             whileInView={reduced ? { opacity: 1 } : { opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="rounded-lg border border-cyan/30 bg-navy p-7 text-white shadow-glow"
+            className="glass-card-dark p-7 text-white"
           >
             <p className="text-sm font-semibold uppercase text-cyan">Después</p>
             <ul className="mt-7 grid gap-4">

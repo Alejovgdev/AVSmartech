@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { CTASection } from "@/components/shared/CTASection";
 import { PageHero } from "@/components/shared/PageHero";
 import { SectionIntro } from "@/components/shared/SectionIntro";
@@ -56,9 +58,9 @@ export default function DigitalizacionPage() {
     <>
       <PageHero
         eyebrow="Digitalización de negocios"
-        title="Haz que te encuentren, confíen en ti y te compren."
-        description="Modernizamos tu presencia digital para que deje de ser un escaparate pasivo y se convierta en un sistema de captación, confianza y ventas."
-        points={["Web profesional", "SEO local", "Google Business", "Apple Maps"]}
+        title="Haz que te encuentren, confíen en ti y te contacten."
+        description="Modernizamos tu presencia digital para que deje de ser un escaparate pasivo y se convierta en un sistema de captación: web clara, SEO local, mapas, contenido y llamadas a la acción."
+        points={["Diseño web", "SEO local", "Google Business", "Marketing digital"]}
         ctaLabel="Quiero más clientes"
       />
 
@@ -91,6 +93,43 @@ export default function DigitalizacionPage() {
               </p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="bg-white py-16 sm:py-20">
+        <div className="mx-auto grid max-w-7xl gap-5 px-5 sm:px-6 lg:grid-cols-2 lg:px-8">
+          <Link
+            href="/marketing-digital-valencia"
+            className="focus-ring group rounded-lg border border-slate-200 bg-soft p-7 transition hover:-translate-y-1 hover:border-cyan/40 hover:bg-white hover:shadow-premium"
+          >
+            <p className="text-sm font-semibold uppercase text-electric">SEO local</p>
+            <h2 className="mt-4 font-display text-2xl font-semibold text-navy">
+              Marketing digital
+            </h2>
+            <p className="mt-4 leading-7 text-muted">
+              Atrae clientes cercanos con una estrategia local de visibilidad, Google Business, contenido y conversión.
+            </p>
+            <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-electric group-hover:text-navy">
+              Ver servicio
+              <ArrowRight className="h-4 w-4" />
+            </span>
+          </Link>
+          <Link
+            href="/diseno-web-valencia"
+            className="focus-ring group rounded-lg border border-slate-200 bg-soft p-7 transition hover:-translate-y-1 hover:border-cyan/40 hover:bg-white hover:shadow-premium"
+          >
+            <p className="text-sm font-semibold uppercase text-electric">Web comercial</p>
+            <h2 className="mt-4 font-display text-2xl font-semibold text-navy">
+              Diseño web
+            </h2>
+            <p className="mt-4 leading-7 text-muted">
+              Convierte tu web en una herramienta de captación con estructura SEO, mensajes claros y CTAs visibles.
+            </p>
+            <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-electric group-hover:text-navy">
+              Ver servicio
+              <ArrowRight className="h-4 w-4" />
+            </span>
+          </Link>
         </div>
       </section>
 

@@ -10,9 +10,9 @@ type CTASectionProps = {
 };
 
 export function CTASection({
-  title = "Tu negocio puede vender más y operar mejor.",
-  description = "Más clientes. Menos tareas manuales. Más margen. Empezamos con un diagnóstico claro y accionable.",
-  buttonLabel = "Solicitar diagnóstico",
+  title = "Tu negocio puede conseguir más clientes y operar con menos fricción.",
+  description = "Empezamos con un diagnóstico gratuito para detectar oportunidades reales en captación, SEO local, automatización y control del negocio.",
+  buttonLabel = "Solicitar diagnóstico gratuito",
   href = "/contacto"
 }: CTASectionProps) {
   return (
@@ -28,7 +28,7 @@ export function CTASection({
         </p>
         <Link
           href={href}
-          className="focus-ring mt-9 inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 text-sm font-semibold text-navy shadow-glow transition hover:-translate-y-0.5 hover:bg-cyan hover:text-white"
+          className="focus-ring subtle-sheen mt-9 inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 text-sm font-semibold text-navy shadow-glow transition hover:-translate-y-0.5 hover:bg-cyan hover:text-white"
         >
           {buttonLabel}
           <ArrowRight className="h-4 w-4" />

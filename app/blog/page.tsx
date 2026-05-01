@@ -24,7 +24,7 @@ export default function BlogPage() {
         title="Ideas para vender más, ahorrar tiempo y operar con mejores sistemas."
         description="Una base editorial preparada para SEO, pensada para educar al mercado y atraer empresas que ya sienten fricción en ventas, procesos o datos."
         points={["Automatización", "SEO local", "IA empresarial", "Crecimiento B2B"]}
-        ctaLabel="Solicitar diagnóstico"
+        ctaLabel="Solicitar diagnóstico gratuito"
       />
 
       <section className="bg-white py-20 sm:py-24">

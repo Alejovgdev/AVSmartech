@@ -26,12 +26,12 @@ const sora = Sora({
 export const metadata: Metadata = {
   metadataBase: new URL("https://avsmartech.com"),
   title: {
-    default: "AV SmartTech | Soluciones digitales inteligentes",
-    template: "%s | AV SmartTech"
+    default: "Marketing digital y automatización para empresas | AV Smartech",
+    template: "%s | AV Smartech"
   },
   description:
-    "Digitalización, automatización e inteligencia artificial para empresas que quieren vender más y reducir costes.",
-  applicationName: "AV SmartTech",
+    "AV Smartech ayuda a empresas a conseguir más clientes, ahorrar tiempo y reducir costes mediante marketing digital, diseño web, SEO local, automatización e inteligencia artificial.",
+  applicationName: "AV Smartech",
   keywords: [
     "digitalización de negocios",
     "automatización con IA",
@@ -41,11 +41,11 @@ export const metadata: Metadata = {
     "consultoría tecnológica"
   ],
   openGraph: {
-    title: "AV SmartTech | Soluciones digitales inteligentes",
+    title: "Marketing digital y automatización para empresas | AV Smartech",
     description:
-      "Digitalización, automatización e inteligencia artificial para empresas que quieren vender más y reducir costes.",
+      "AV Smartech ayuda a empresas a conseguir más clientes, ahorrar tiempo y reducir costes mediante marketing digital, diseño web, SEO local, automatización e inteligencia artificial.",
     url: "https://avsmartech.com",
-    siteName: "AV SmartTech",
+    siteName: "AV Smartech",
     locale: "es_ES",
     type: "website",
     images: [
@@ -53,21 +53,25 @@ export const metadata: Metadata = {
         url: "/avsmartech-logo.png",
         width: 1200,
         height: 630,
-        alt: "AV SmartTech"
+        alt: "AV Smartech"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "AV SmartTech | Soluciones digitales inteligentes",
+    title: "Marketing digital y automatización para empresas | AV Smartech",
     description:
-      "Digitalización, automatización e inteligencia artificial para empresas que quieren vender más y reducir costes.",
+      "AV Smartech ayuda a empresas a conseguir más clientes, ahorrar tiempo y reducir costes mediante marketing digital, diseño web, SEO local, automatización e inteligencia artificial.",
     images: ["/avsmartech-logo.png"]
   },
   icons: {
-    icon: assets.logoCircle,
-    shortcut: assets.logoCircle,
-    apple: assets.logoCircle
+    icon: [
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon-144x144.png", sizes: "144x144", type: "image/png" }
+    ],
+    shortcut: "/icon.png",
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }]
   }
 };
 

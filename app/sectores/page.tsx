@@ -23,7 +23,7 @@ export default function SectoresPage() {
         title="Cada negocio tiene fricciones distintas. El sistema debe adaptarse a ellas."
         description="Aplicamos digitalización y automatización con criterio sectorial: captación donde hay demanda, procesos donde hay repetición y datos donde falta control."
         points={["Captación local", "Procesos repetitivos", "Atención al cliente", "Datos operativos"]}
-        ctaLabel="Ver oportunidades"
+        ctaLabel="Hablemos de tu negocio"
       />
 
       <section className="bg-white py-20 sm:py-24">
@@ -35,6 +35,7 @@ export default function SectoresPage() {
       <CTASection
         title="Tu sector ya tiene oportunidades digitales esperando."
         description="Te ayudamos a priorizar las que más impacto tienen en ventas, tiempo, costes y control."
+        buttonLabel="Solicitar diagnóstico gratuito"
       />
     </>
   );
