@@ -23,7 +23,7 @@ const sora = Sora({
   display: "swap"
 });
 
-const siteUrl = "https://www.avsmartech.com";
+const siteUrl = "https://avsmartech.com";
 const seoTitle = "Marketing Digital y Tecnología para Empresas | AV Smartech";
 const seoDescription =
   "Impulsa tu negocio con marketing digital, diseño web, SEO local, automatización e IA aplicada a ventas y procesos.";

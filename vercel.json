@@ -6,10 +6,10 @@
       "has": [
         {
           "type": "host",
-          "value": "avsmartech.com"
+          "value": "www.avsmartech.com"
         }
       ],
-      "destination": "https://www.avsmartech.com/:path*",
+      "destination": "https://avsmartech.com/:path*",
       "permanent": true
     }
   ],

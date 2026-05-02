@@ -4,4 +4,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://www.avsmartech.com/sitemap.xml
+Sitemap: https://avsmartech.com/sitemap.xml
