@@ -88,7 +88,7 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "AV Smartech",
-  url: "https://avsmartech.com",
+  url: "https://www.avsmartech.com",
   description:
     "Marketing digital, diseño web, SEO local, automatización e inteligencia artificial para empresas que quieren conseguir más clientes, ahorrar tiempo y reducir costes.",
   areaServed: ["Valencia", "España"],
