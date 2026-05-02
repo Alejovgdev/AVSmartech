@@ -13,15 +13,12 @@ import { ServiceCards, type ServiceCardItem } from "@/components/shared/ServiceC
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Marketing digital y automatización para empresas | AV Smartech"
+    absolute: "Marketing Digital y Tecnología para Empresas | AV Smartech"
   },
   description:
-    "AV Smartech ayuda a empresas a conseguir más clientes, ahorrar tiempo y reducir costes mediante marketing digital, diseño web, SEO local, automatización e inteligencia artificial.",
-  openGraph: {
-    title: "Marketing digital y automatización para empresas | AV Smartech",
-    description:
-      "AV Smartech ayuda a empresas a conseguir más clientes, ahorrar tiempo y reducir costes mediante marketing digital, diseño web, SEO local, automatización e inteligencia artificial.",
-    url: "/"
+    "Impulsa tu negocio con marketing digital, diseño web, SEO local, automatización e IA aplicada a ventas y procesos.",
+  alternates: {
+    canonical: "/"
   }
 };
 

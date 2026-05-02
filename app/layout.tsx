@@ -23,46 +23,62 @@ const sora = Sora({
   display: "swap"
 });
 
+const siteUrl = "https://avsmartech.com";
+const seoTitle = "Marketing Digital y Tecnología para Empresas | AV Smartech";
+const seoDescription =
+  "Impulsa tu negocio con marketing digital, diseño web, SEO local, automatización e IA aplicada a ventas y procesos.";
+const ogImage = assets.hook;
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://avsmartech.com"),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Marketing digital y automatización para empresas | AV Smartech",
+    default: seoTitle,
     template: "%s | AV Smartech"
   },
-  description:
-    "AV Smartech ayuda a empresas a conseguir más clientes, ahorrar tiempo y reducir costes mediante marketing digital, diseño web, SEO local, automatización e inteligencia artificial.",
+  description: seoDescription,
   applicationName: "AV Smartech",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1
+    }
+  },
   keywords: [
     "digitalización de negocios",
     "automatización con IA",
     "inteligencia artificial para empresas",
+    "marketing digital",
+    "tecnología para empresas",
     "SEO local",
     "automatización de procesos",
     "consultoría tecnológica"
   ],
   openGraph: {
-    title: "Marketing digital y automatización para empresas | AV Smartech",
-    description:
-      "AV Smartech ayuda a empresas a conseguir más clientes, ahorrar tiempo y reducir costes mediante marketing digital, diseño web, SEO local, automatización e inteligencia artificial.",
-    url: "https://avsmartech.com",
+    title: seoTitle,
+    description: seoDescription,
+    url: siteUrl,
     siteName: "AV Smartech",
     locale: "es_ES",
     type: "website",
     images: [
       {
-        url: "/avsmartech-logo.png",
-        width: 1200,
-        height: 630,
-        alt: "AV Smartech"
+        url: ogImage,
+        width: 1728,
+        height: 910,
+        alt: "AV Smartech: marketing digital y tecnología para empresas"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marketing digital y automatización para empresas | AV Smartech",
-    description:
-      "AV Smartech ayuda a empresas a conseguir más clientes, ahorrar tiempo y reducir costes mediante marketing digital, diseño web, SEO local, automatización e inteligencia artificial.",
-    images: ["/avsmartech-logo.png"]
+    title: seoTitle,
+    description: seoDescription,
+    images: [ogImage]
   },
   icons: {
     icon: [
