@@ -97,7 +97,7 @@ export async function POST(request: Request) {
     const html = `
       <div style="font-family:Arial,sans-serif;color:#07152D;line-height:1.6">
         <h1 style="margin:0 0 16px;color:#001B3F">Nueva solicitud de diagnóstico</h1>
-        <p style="margin:0 0 24px;color:#5B6472">Formulario recibido desde la web de AV SmartTech.</p>
+        <p style="margin:0 0 24px;color:#5B6472">Formulario recibido desde la web de AV Smartech.</p>
         <table style="border-collapse:collapse;width:100%;max-width:680px">
           ${rows
             .map(
@@ -116,7 +116,7 @@ export async function POST(request: Request) {
     const text = rows.map(([label, value]) => `${label}: ${value}`).join("\n");
 
     await transporter.sendMail({
-      from: process.env.SMTP_FROM ?? `"AV SmartTech" <${smtpUser}>`,
+      from: process.env.SMTP_FROM ?? `"AV Smartech" <${smtpUser}>`,
       to: process.env.CONTACT_TO ?? defaultContactTo,
       replyTo: email,
       subject: `Nueva solicitud de diagnóstico - ${name}`,

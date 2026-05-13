@@ -8,9 +8,9 @@ import { getBrandAssets } from "@/lib/public-assets";
 export const metadata: Metadata = {
   title: "Nosotros",
   description:
-    "AV SmartTech diseña sistemas digitales que mejoran ventas, eficiencia y tranquilidad operativa con tecnología útil para empresas.",
+    "AV Smartech diseña sistemas digitales que mejoran ventas, eficiencia y tranquilidad operativa con tecnología útil para empresas.",
   openGraph: {
-    title: "Nosotros | AV SmartTech",
+    title: "Nosotros | AV Smartech",
     description:
       "Tecnología con propósito empresarial: claridad, resultados, confianza, innovación útil, escalabilidad y cercanía profesional.",
     url: "/nosotros"
@@ -36,7 +36,7 @@ export default function NosotrosPage() {
         title="Tecnología práctica para empresas que quieren crecer."
         description="AV Smartech nace de la visión de tres ingenieros de software que quieren ayudar a empresas a crecer mediante soluciones digitales prácticas, inteligentes y orientadas a resultados."
         imageSrc={assets.hook}
-        imageAlt="AV SmartTech presentando soluciones digitales inteligentes"
+        imageAlt="AV Smartech presentando soluciones digitales inteligentes"
         imageAspect="wide"
         points={["Diagnóstico claro", "Implementación cuidada", "Impacto medible", "Acompañamiento profesional"]}
         ctaLabel="Solicitar diagnóstico gratuito"
@@ -48,7 +48,7 @@ export default function NosotrosPage() {
             <div className="relative aspect-[1.15] overflow-hidden rounded-lg border border-slate-200 bg-soft shadow-premium">
               <Image
                 src={assets.meet}
-                alt="Consultoría y metodología AV SmartTech"
+                alt="Consultoría y metodología AV Smartech"
                 fill
                 sizes="(min-width: 1024px) 520px, 100vw"
                 className="object-cover"

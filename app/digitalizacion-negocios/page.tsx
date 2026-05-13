@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Web corporativa, SEO local, Google Business, Apple Maps, redes sociales, vídeo, email marketing y funnels para conseguir más clientes.",
   openGraph: {
-    title: "Digitalización de negocios | AV SmartTech",
+    title: "Digitalización de negocios | AV Smartech",
     description:
       "Haz que te encuentren, confíen en ti y te compren con presencia digital orientada a conversión.",
     url: "/digitalizacion-negocios"

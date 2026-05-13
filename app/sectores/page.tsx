@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Soluciones de digitalización y automatización para clínicas, restaurantes, inmobiliarias, gestorías, talleres, academias, comercios y empresas de servicios.",
   openGraph: {
-    title: "Sectores | AV SmartTech",
+    title: "Sectores | AV Smartech",
     description:
       "Qué digitalizar, qué automatizar y qué mejora lograr según el tipo de negocio.",
     url: "/sectores"

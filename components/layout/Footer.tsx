@@ -24,13 +24,13 @@ export function Footer() {
             <span className="relative h-14 w-14 overflow-hidden rounded-full bg-white ring-1 ring-white/30">
               <Image
                 src={assets.logoCircle}
-                alt="AV SmartTech"
+                alt="AV Smartech"
                 fill
                 sizes="56px"
                 className="rounded-full object-cover"
               />
             </span>
-            <span className="font-display text-lg font-semibold">AV SmartTech</span>
+            <span className="font-display text-lg font-semibold">AV Smartech</span>
           </Link>
           <p className="mt-6 max-w-sm text-sm leading-7 text-white/72">
             Marketing digital, diseño web, SEO local y automatización para conseguir más clientes, ahorrar tiempo y reducir costes.
@@ -84,7 +84,7 @@ export function Footer() {
       </div>
       <div className="relative border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-xs text-white/56 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-          <p>© {new Date().getFullYear()} AV SmartTech. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} AV Smartech. Todos los derechos reservados.</p>
           <p>Servicios digitales inteligentes para empresas con ambición de crecer.</p>
         </div>
       </div>

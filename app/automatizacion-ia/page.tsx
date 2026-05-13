@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Automatización administrativa, CRM automático, seguimiento comercial, facturación, bots IA, dashboards, integraciones, reportes y predicciones.",
   openGraph: {
-    title: "Automatización con IA | AV SmartTech",
+    title: "Automatización con IA | AV Smartech",
     description:
       "Convierte tareas repetitivas en sistemas inteligentes para ahorrar costes, ganar velocidad y mejorar márgenes.",
     url: "/automatizacion-ia"

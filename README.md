@@ -1,6 +1,6 @@
-# AV SmartTech
+# AV Smartech
 
-Web corporativa multipagina para AV SmartTech, creada con Next.js App Router, TypeScript, Tailwind CSS, Framer Motion, GSAP, Lenis y React Three Fiber.
+Web corporativa multipagina para AV Smartech, creada con Next.js App Router, TypeScript, Tailwind CSS, Framer Motion, GSAP, Lenis y React Three Fiber.
 
 ## Desarrollo
 
@@ -25,7 +25,7 @@ SMTP_PORT=465
 SMTP_SECURE=true
 SMTP_USER=avsmartechnology@gmail.com
 SMTP_PASS=tu_contrasena_de_aplicacion_de_gmail
-SMTP_FROM="AV SmartTech <avsmartechnology@gmail.com>"
+SMTP_FROM="AV Smartech <avsmartechnology@gmail.com>"
 CONTACT_TO=contact@avsmartech.com
 ```
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Ideas prácticas sobre automatización, IA empresarial, SEO local, digitalización y crecimiento para negocios reales.",
   openGraph: {
-    title: "Blog | AV SmartTech",
+    title: "Blog | AV Smartech",
     description:
       "Contenido SEO sobre automatización, IA útil, captación online y errores digitales que frenan ventas.",
     url: "/blog"

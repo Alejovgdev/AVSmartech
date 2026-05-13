@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Solicita un diagnóstico gratuito para detectar oportunidades reales de digitalización, automatización, ahorro de costes y captación de clientes.",
   openGraph: {
-    title: "Contacto | AV SmartTech",
+    title: "Contacto | AV Smartech",
     description:
       "Te mostraremos oportunidades reales para vender más y reducir costes.",
     url: "/contacto"

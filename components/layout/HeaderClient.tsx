@@ -25,7 +25,7 @@ export function HeaderClient({ logoSrc }: { logoSrc: string }) {
           <span className="relative block h-12 w-20 overflow-hidden sm:w-24">
             <Image
               src={logoSrc}
-              alt="AV SmartTech"
+              alt="AV Smartech"
               fill
               priority
               sizes="96px"
@@ -33,7 +33,7 @@ export function HeaderClient({ logoSrc }: { logoSrc: string }) {
             />
           </span>
           <span className="hidden font-display text-base font-semibold text-navy sm:block">
-            AV SmartTech
+            AV Smartech
           </span>
         </Link>
 
