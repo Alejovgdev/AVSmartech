@@ -22,7 +22,7 @@ export function HeaderClient({ logoSrc }: { logoSrc: string }) {
     <header className="sticky top-0 z-50 border-b border-white/70 bg-white/82 shadow-[0_14px_40px_rgba(7,21,45,0.07)] backdrop-blur-xl">
       <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
         <Link href="/" className="focus-ring flex items-center gap-3 rounded-md">
-          <span className="relative block h-[4.5rem] w-32 overflow-hidden sm:h-12 sm:w-24">
+          <span className="relative block h-[4.5rem] w-32 translate-y-1 overflow-hidden sm:h-12 sm:w-24 sm:translate-y-0">
             <Image
               src={logoSrc}
               alt="AV Smartech"
