@@ -22,14 +22,14 @@ export function HeaderClient({ logoSrc }: { logoSrc: string }) {
     <header className="sticky top-0 z-50 border-b border-white/70 bg-white/82 shadow-[0_14px_40px_rgba(7,21,45,0.07)] backdrop-blur-xl">
       <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
         <Link href="/" className="focus-ring flex items-center gap-3 rounded-md">
-          <span className="relative block h-12 w-20 overflow-hidden sm:w-24">
+          <span className="relative block h-[4.5rem] w-32 overflow-hidden sm:h-12 sm:w-24">
             <Image
               src={logoSrc}
               alt="AV Smartech"
               fill
               priority
-              sizes="96px"
-              className="object-contain"
+              sizes="(min-width: 640px) 96px, 128px"
+              className="scale-[1.3] object-contain sm:scale-125"
             />
           </span>
           <span className="hidden font-display text-base font-semibold text-navy sm:block">
